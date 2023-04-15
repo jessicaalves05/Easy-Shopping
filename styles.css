@@ -1,0 +1,182 @@
+/*background-color: define a cor de fundo de um elemento;
+color: define a cor do texto dentro de um elemento;
+font-family: define a fonte do texto dentro de um elemento;
+font-size: define o tamanho da fonte do texto dentro de um elemento;
+margin: define a margem em torno de um elemento;
+padding: define o espaço de preenchimento em torno do conteúdo de um elemento;
+border: define a borda ao redor de um elemento;
+display: define o tipo de exibição de um elemento (por exemplo, bloco, inline ou flex);
+position: define o posicionamento de um elemento (por exemplo, absoluto ou relativo);
+text-align: define a alinhamento horizontal do texto dentro de um elemento;
+text-decoration: define a decoração do texto dentro de um elemento (por exemplo, sublinhado, tachado ou em negrito);
+transition: define a transição entre diferentes estados de um elemento (por exemplo, ao passar o mouse sobre ele).
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: #5D5D7D;
+}
+
+.wrapper {
+  height: 90vh;
+  width: 100vw;
+}
+
+
+
+.container-left {
+  display: inline-block;
+  width: 60%;
+  padding-left: 26px;
+  margin-top: 10%;
+}
+
+
+.container-right {
+  display: inline-block;
+  background-color: rgba(93, 93, 125, 0.16);
+  height: 100vh;
+  width: 40%;
+  position: absolute;
+
+}
+
+
+
+
+img {
+  position: relative;
+  width: 310px;
+  top: 10%;
+  right: 90px;
+
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  color: #5D5D7D;
+  width: 400px;
+}
+
+p {
+  font-size: 28px;
+  line-height: 38px;
+  opacity: 0.6;
+  margin: 15px 0;
+  width: 540px;
+}
+
+button {
+  width: 190px;
+  height: 62px;
+  background: #9499ea;
+  box-shadow: 0px 10px 24px rgba(148, ·153, ·234, ·0.0979959);
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+button:active {
+  opacity: .5;
+}
+
+a {
+  font-size: 28px;
+  line-height: 41px;
+  color: #5D5D7D;
+  margin-right: 21px;
+  cursor: pointer;
+}
+
+
+
+
+a:nth-child(2) {
+  opacity: 0.4;
+}
+
+a:hover {
+  opacity: 0.4;
+}
+
+a:active {
+  opacity: 0.8;
+}
+
+header {
+  margin: 14px 0 0 27px;
+}
+
+@media screen and (max-width: 742px) {
+  .container-left {
+    display: block;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container-right {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: static;
+    background-size: cover;
+    padding: 40px;
+  }
+
+  img {
+    position: static;
+    max-width: 90%;
+  }
+
+  header {
+    display: none;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 52px;
+    width: auto;
+    margin: 28px 0px 0 30px;
+    text-align: center;
+  }
+
+  p {
+    margin: 15px 30px;
+    width: auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  button {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width:330px) {
+
+  .container-left {
+    height: 70%;
+
+  }
+
+
+
+  
+}
